@@ -45,7 +45,7 @@ First of all, if you don't have an Xcode project yet, create one, then install t
 **1)** Import the Cronovo iOS SDK module in your UIApplicationDelegate subclass:
 
 ```
-import SuperBotSDK
+import Cronovo
 ```
 **2)** Configure a Cronovo iOS SDK shared instance, in your App Delegate, inside **application:didFinishLaunchingWithOptions:** method:
 
@@ -76,6 +76,12 @@ insertData(data: [Int])
 getUserDetails()
 ```
 - This will return an array for Integers in order [Age,Height,Weight]
+
+### Delete Database:
+- This method can be used to delete the database in any case:
+```
+deleteData()
+```
 
 ### Methods to calculate app functionalities:
 - There are some public methods to calculate the result for the algorithms
@@ -185,4 +191,4 @@ Made with ❤️ by [Antino Labs](https://www.antino.io/)
 
 
 ## License
-SuperBot is released under the MIT license. [See LICENSE](https://github.com/antinolabsdev/Cronovo-SDK-iOS/blob/master/LICENSE) for details.
+Cronovo is released under the MIT license. [See LICENSE](https://github.com/antinolabsdev/Cronovo-SDK-iOS/blob/master/LICENSE) for details.
