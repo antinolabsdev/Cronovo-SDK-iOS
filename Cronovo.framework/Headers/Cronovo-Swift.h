@@ -219,7 +219,6 @@ SWIFT_CLASS("_TtC7Cronovo7Cronovo")
 - (void)ConfigureWithAge:(NSInteger)age weight:(NSInteger)weight height:(NSInteger)height;
 - (void)insertDataWithData:(NSArray<NSNumber *> * _Nonnull)data;
 - (NSArray<NSNumber *> * _Nonnull)getUserDetails SWIFT_WARN_UNUSED_RESULT;
-- (void)insertDummyDataWithData:(NSArray<NSNumber *> * _Nonnull)data ticks:(int64_t)ticks;
 - (NSString * _Nonnull)getRestingHeartRate SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nonnull)cardiacEfficiencyForTime:(enum CardiacDuration)forTime SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nonnull)getRRi SWIFT_WARN_UNUSED_RESULT;
@@ -476,7 +475,6 @@ SWIFT_CLASS("_TtC7Cronovo7Cronovo")
 - (void)ConfigureWithAge:(NSInteger)age weight:(NSInteger)weight height:(NSInteger)height;
 - (void)insertDataWithData:(NSArray<NSNumber *> * _Nonnull)data;
 - (NSArray<NSNumber *> * _Nonnull)getUserDetails SWIFT_WARN_UNUSED_RESULT;
-- (void)insertDummyDataWithData:(NSArray<NSNumber *> * _Nonnull)data ticks:(int64_t)ticks;
 - (NSString * _Nonnull)getRestingHeartRate SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nonnull)cardiacEfficiencyForTime:(enum CardiacDuration)forTime SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nonnull)getRRi SWIFT_WARN_UNUSED_RESULT;

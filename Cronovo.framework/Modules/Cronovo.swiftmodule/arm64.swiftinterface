@@ -11,7 +11,6 @@ import Swift
   @objc public func Configure(age: Swift.Int, weight: Swift.Int, height: Swift.Int)
   @objc public func insertData(data: [Swift.Int])
   @objc public func getUserDetails() -> [Swift.Int32]
-  @objc public func insertDummyData(data: [Swift.Int], ticks: Swift.Int64)
   @objc public func getRestingHeartRate() -> Swift.String
   @objc public func cardiacEfficiency(forTime: Cronovo.CardiacDuration) -> Swift.String
   @objc public func getRRi() -> Swift.String
