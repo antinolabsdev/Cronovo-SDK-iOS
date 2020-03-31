@@ -1,0 +1,68 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)
+// swift-module-flags: -target i386-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name Cronovo
+@_exported import Cronovo
+import Foundation
+import SQLite3
+import Swift
+@objc public class Cronovo : ObjectiveC.NSObject {
+  public static var sharedInstance: Cronovo.Cronovo
+  @objc override dynamic public init()
+  @objc public func Configure(age: Swift.Int, weight: Swift.Int, height: Swift.Int)
+  @objc public func insertData(data: [Swift.Int])
+  @objc public func getUserDetails() -> [Swift.Int32]
+  @objc public func insertDummyData(data: [Swift.Int], ticks: Swift.Int64)
+  @objc public func getRestingHeartRate() -> Swift.String
+  @objc public func cardiacEfficiency(forTime: Cronovo.CardiacDuration) -> Swift.String
+  @objc public func getRRi() -> Swift.String
+  @objc public func getHRV() -> Swift.String
+  @objc public func getVO2Max() -> Swift.String
+  @objc public func heartRateRecovery(forTime: Cronovo.RecoveryTime) -> Swift.String
+  @objc public func coreTemperature(scale: Cronovo.Scale) -> Swift.String
+  @objc public func heartRateZone(zone: Cronovo.HeartZone, Age: Swift.Int) -> Swift.String
+  @objc public func trainingEffect(Age: Swift.Int, StartTime: Swift.Int64, StopTime: Swift.Int64) -> Foundation.NSDictionary
+  @objc public func deleteData()
+  @objc deinit
+}
+@objc public enum Scale : Swift.Int {
+  case Celsius
+  case Fahrenheit
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum RecoveryTime : Swift.Int {
+  case ThirtySec = 30
+  case SixtySec = 60
+  case OneTwentySec = 120
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum CardiacDuration : Swift.Int64 {
+  case Daily = 86400
+  case Weekly = 604800
+  case Monthly = 2678400
+  case AllTime = 0
+  public typealias RawValue = Swift.Int64
+  public init?(rawValue: Swift.Int64)
+  public var rawValue: Swift.Int64 {
+    get
+  }
+}
+@objc public enum HeartZone : Swift.Int {
+  case Zone1 = 50
+  case Zone2 = 60
+  case Zone3 = 70
+  case Zone4 = 80
+  case Zone5 = 90
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}

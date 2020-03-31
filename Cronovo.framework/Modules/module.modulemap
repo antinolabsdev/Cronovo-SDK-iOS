@@ -1,0 +1,11 @@
+framework module Cronovo {
+  umbrella header "Cronovo.h"
+
+  export *
+  module * { export * }
+}
+
+module Cronovo.Swift {
+    header "Cronovo-Swift.h"
+    requires objc
+}
